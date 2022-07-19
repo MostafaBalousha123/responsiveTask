@@ -5,12 +5,9 @@
   color: #565656;
   font-family: "Poppins", sans-serif;
 }
-
-main {
-  /* border: 2px red solid; */
-}
-main section ,footer {
-  /* border: 2px red solid; */
+/************************general*************************************/
+main section,
+footer {
   padding: 20px;
 }
 img {
@@ -29,6 +26,7 @@ button {
   border-radius: 20px;
   margin: 20px 0;
 }
+/************************get start section*************************************/
 
 #get-start img {
   width: 190px;
@@ -52,22 +50,17 @@ button {
   top: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70px;
+  width: 60px;
   height: 1px;
   background-color: black;
 }
-
-
-
 #get-start .title {
   font-size: 32px;
 }
 
-/*************************************************************************/
-
+/*****************************services section********************************************/
 div#services-icon {
   text-decoration: none;
-  /* border: red solid 2px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -76,13 +69,16 @@ div#services-icon {
 ion-icon {
   border: 2px #565656a6 solid;
   display: block;
-  width: 40px;
-  height: 40px;
-  padding: 15px;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
   border-radius: 50%;
-  margin: 5px 10px;
+  margin: 5px 13px;
 }
-
+/*****************************duis section********************************************/
+#duis-torquent-continer {
+  margin-top: 40px;
+}
 .duis-img img {
   width: 100%;
   border-radius: 8px;
@@ -90,28 +86,49 @@ ion-icon {
   margin-bottom: 30px;
 }
 .test {
-  /* border: 2px solid red ; */
   margin-top: 30px;
 }
 
 #amet-ullamcorper {
   padding: 100px 20px;
-  background-image: url(/images/background2.jpg);
   height: 80vh;
+  display: block;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#amet-ullamcorper::after {
+  content: "";
+  background-image: url(/images/background.jpg);
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
 }
 #amet-ullamcorper .title,
 #amet-ullamcorper .description {
-  color: rgba(255, 255, 255, 0.87);
+  color: rgb(255, 255, 255);
 }
 #amet-ullamcorper button {
   background-color: unset;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgb(255, 255, 255);
   border: 1px solid white;
 }
+/***************************** footer ********************************************/
 footer {
-  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e3e3e341;
 }
-form input ,form textarea{
+form {
+  width: 100%;
+}
+form input,
+form textarea {
   display: block;
   width: 100%;
   border-radius: 8px;
@@ -119,6 +136,24 @@ form input ,form textarea{
   margin-top: 10px;
   border: #5656563d 2px solid;
 }
+#contact-continer {
+  text-decoration: none;
+  /* border: red solid 2px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: 20px 8px;
+}
+#contact-continer ion-icon {
+  border: 2px #565656a6 solid;
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 5px 5px;
+}
+/***************************** Media query min 600px ********************************************/
 
 @media (min-width: 600px) {
   p {
@@ -127,18 +162,17 @@ form input ,form textarea{
   #get-start {
     display: flex;
   }
-  main section ,footer{
-    /* border: 2px red solid; */
+  main section,
+  footer {
     padding: 20px 100px;
   }
   .duis-child div {
-    width: 50%;
-    /* border: 2px red solid; */
+    width: 47%;
   }
   #duis-torquent-continer .duis-child {
     display: flex;
     flex-wrap: wrap;
-    /* border: 2px red solid; */
+    justify-content: space-between;
   }
   .unique {
     flex-direction: row-reverse;
@@ -164,26 +198,54 @@ form input ,form textarea{
     display: block;
   }
   #amet-ullamcorper .title,
-#amet-ullamcorper .description {
-  color: rgba(255, 255, 255, 0.87);
-  width: 70%;
-  text-align: center;
-  margin: 10px auto;
+  #amet-ullamcorper .description {
+    width: 70%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  form,
+  div#footer-first-parent {
+    width: 50%;
+  }
 }
-}
+/***************************** Media query min 900px ********************************************/
 
 @media (min-width: 900px) {
   p {
     font-size: 16px;
   }
   main section {
-    /* border: 2px red solid; */
     padding: 20px 18%;
+  }
+  #footer-first-parent .description {
+    width: 90%;
+    text-align: start;
+    margin-left: 0;
+  }
+  #footer-first-parent .title {
+    width: max-content;
+    margin: 20px 5px;
+    font-size: 27px;
+    position: relative;
+    text-align: start;
+  }
+  #footer-first-parent .title::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 15%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: black;
   }
 }
 
+/***************************** Media query min 1200px ********************************************/
+
 @media (min-width: 1200px) {
   p {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
