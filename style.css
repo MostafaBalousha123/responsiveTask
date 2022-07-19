@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #565656;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  /* border: 2px red solid; */
+}
+main section ,footer {
+  /* border: 2px red solid; */
+  padding: 20px;
+}
+img {
+  display: block;
+}
+h1 {
+  font-weight: 300;
+}
+button {
+  background-color: white;
+  border: 1px solid #565656;
+  cursor: pointer;
+  text-align: center !important;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+#get-start img {
+  width: 190px;
+  height: 180px;
+  margin: 30px auto;
+  border-radius: 50%;
+}
+
+.description {
+  text-align: center;
+}
+.title {
+  width: max-content;
+  margin: 20px auto 5px;
+  font-size: 27px;
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 1px;
+  background-color: black;
+}
+
+
+
+#get-start .title {
+  font-size: 32px;
+}
+
+/*************************************************************************/
+
+div#services-icon {
+  text-decoration: none;
+  /* border: red solid 2px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 25px auto;
+}
+ion-icon {
+  border: 2px #565656a6 solid;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 5px 10px;
+}
+
+.duis-img img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.test {
+  /* border: 2px solid red ; */
+  margin-top: 30px;
+}
+
+#amet-ullamcorper {
+  padding: 100px 20px;
+  background-image: url(/images/background2.jpg);
+  height: 80vh;
+}
+#amet-ullamcorper .title,
+#amet-ullamcorper .description {
+  color: rgba(255, 255, 255, 0.87);
+}
+#amet-ullamcorper button {
+  background-color: unset;
+  color: rgba(255, 255, 255, 0.87);
+  border: 1px solid white;
+}
+footer {
+  margin-bottom: 100px;
+}
+form input ,form textarea{
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 4px;
+  margin-top: 10px;
+  border: #5656563d 2px solid;
+}
+
+@media (min-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+  #get-start {
+    display: flex;
+  }
+  main section ,footer{
+    /* border: 2px red solid; */
+    padding: 20px 100px;
+  }
+  .duis-child div {
+    width: 50%;
+    /* border: 2px red solid; */
+  }
+  #duis-torquent-continer .duis-child {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px red solid; */
+  }
+  .unique {
+    flex-direction: row-reverse;
+  }
+  button.half {
+    width: max-content;
+    margin: 0 auto;
+    display: block;
+    padding: 0.2rem 1rem;
+    margin-top: 20px;
+  }
+  button.left {
+    width: max-content;
+    margin-left: 20px;
+    display: block;
+    padding: 0.2rem 1rem;
+  }
+  #get-start button,
+  #services button {
+    width: max-content;
+    padding: 0.5rem 4rem;
+    margin: 20px auto;
+    display: block;
+  }
+  #amet-ullamcorper .title,
+#amet-ullamcorper .description {
+  color: rgba(255, 255, 255, 0.87);
+  width: 70%;
+  text-align: center;
+  margin: 10px auto;
+}
+}
+
+@media (min-width: 900px) {
+  p {
+    font-size: 16px;
+  }
+  main section {
+    /* border: 2px red solid; */
+    padding: 20px 18%;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 16px;
+  }
+}
